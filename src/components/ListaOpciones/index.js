@@ -1,5 +1,4 @@
 import "./ListaOpciones.css"
-import Formulario from "../Formulario/Formulario"
 
 const ListaOpciones = (props) => {
     //No se utiliza foreach para recorrer 
@@ -15,15 +14,9 @@ const ListaOpciones = (props) => {
     ]
     return <div className="lista-opciones">
         <label>Equipos</label>
-        <select placeholder={props.placeholder}>
-            <option value="" disabled selected hidden>Seleccionar Equipo</option>
-            <option>Programación</option>
-            <option>Front End</option>
-            <option>Data Science</option>
-            <option>DevOps</option>
-            <option>Ux y Diseño</option>
-            <option>Móvil</option>
-            <option>Innovación y Gestión</option>
+        <select>
+            { equipos.map((equipo, index) => <option key={index}>{equipo}</option>
+            ) }
         </select>
     </div>
 }
