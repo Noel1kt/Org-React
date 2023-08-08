@@ -1,13 +1,14 @@
 import './App.css';
 import Header from './components/header/header';
 import Formulario from './components/Formulario/Formulario';
+import MiOrg from './components/MiOrg';
 
 function App() {
-  let suma = 3 + 8
   return (
     <div>
       <Header />
       <Formulario /> 
+      <MiOrg />
     </div>
   );
 }
