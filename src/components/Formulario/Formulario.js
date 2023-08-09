@@ -12,7 +12,13 @@ const Formulario = () => {
 
     const manejarEnvio = (e) => {
         e.preventDefault()
-        console.log("Manejando el envío",e)
+        console.log("Manejando el envío")
+        var datosAEnviar = {
+            nombre,
+            puesto,
+            foto
+        }
+        console.log(datosAEnviar)
     }
     return <section className="formulario">
         <form onSubmit={manejarEnvio}>
