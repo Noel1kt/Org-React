@@ -7,7 +7,7 @@ const CampoTexto = (props) => {
 
     const manejarCambio = (e) => {
         console.log("Cambio", e.target.value)
-        actualizarValor(e.target.value)
+        props.actualizarValor(e.target.value)
     }
 
     return <div className="campo-texto">
@@ -15,7 +15,7 @@ const CampoTexto = (props) => {
         <input 
         placeholder={props.placeholder} 
         required={props.required} 
-        value={valor}
+        value={props.valor}
         onChange={manejarCambio}
         />
     </div>

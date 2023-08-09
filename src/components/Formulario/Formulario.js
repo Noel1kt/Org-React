@@ -20,16 +20,21 @@ const Formulario = () => {
             <CampoTexto 
             titulo="Nombre" 
             placeholder="Ingresar Nombre"
-            required valor={nombre} 
-            actualizrValor={actualizarNombre}/>
+            required 
+            valor={nombre} 
+            actualizarValor={actualizarNombre}/>
             <CampoTexto 
             titulo="Puesto"
             placeholder="Ingresar Puesto" 
-            required/>
+            required
+            valor={puesto} 
+            actualizarValor={actualizarPuesto}/>
             <CampoTexto 
             titulo="Foto"
             placeholder="Ingresar enlace de Foto" 
-            required/>
+            required
+            valor={foto} 
+            actualizarValor={actualizarFoto}/>
             <ListaOpciones placeholder="Seleccionar Equipo" required/>
             <Boton>
                 Crear colaborador
