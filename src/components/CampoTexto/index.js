@@ -2,6 +2,7 @@ import { useState } from "react"
 import "./CampoTexto.css"
 
 const CampoTexto = (props) => {
+    console.log("Datos:", props)
     const [valor, actualizarValor] = useState("")
 
     const manejarCambio = (e) => {
