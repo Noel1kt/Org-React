@@ -4,7 +4,7 @@ import CampoTexto from "../CampoTexto"
 import ListaOpciones from "../ListaOpciones"
 import Boton from "../Boton"
 
-const Formulario = () => {
+const Formulario = (props) => {
 
     const [nombre,actualizarNombre] = useState("")
     const [puesto,actualizarPuesto] = useState("")
@@ -43,10 +43,11 @@ const Formulario = () => {
             required
             valor={foto} 
             actualizarValor={actualizarFoto}/>
-            <ListaOpciones 
-            required
+            <ListaOpciones
+            equipos={props.equipos}
             valor={equipo} 
             actualizarEquipo={actualizarEquipo}
+
             />
             <Boton>
                 Crear colaborador
