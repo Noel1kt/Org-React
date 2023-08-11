@@ -92,6 +92,13 @@ function App() {
   }
 
 
+//Eliminar Colaborador
+
+  const eliminarColaborador = () => {
+    console.log("Eliminar Colaborador")
+  }
+
+
 
   return (
     <div>
@@ -108,6 +115,7 @@ function App() {
         datos={equipo} 
         key={equipo.titulo}
         colaboradores={colaboradores.filter(colaborador => colaborador.equipo === equipo.titulo)}
+        eliminarColaborador={eliminarColaborador}
         />)
       }
     <Footer />
