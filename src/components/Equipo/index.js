@@ -14,7 +14,7 @@ const Equipo = (props) => {
             colaboradores.length > 0 && 
             <section 
             className="equipo" 
-            style={{ backgroundColor: colorPrimario}}>
+            style={{ backgroundColor: hexToRgba(colorPrimario , 0.6) }}>
                 <input
                     type="color"
                     className="input-color"
