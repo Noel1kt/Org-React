@@ -15,6 +15,30 @@ function App() {
     foto:"https://github.com/Noel1kt.png",
     nombre:"Noel Mazariegos",
     puesto:"Desarrollador"
+  },
+  {
+  equipo: "Front End",
+  foto: "https://github.com/harlandlohora.png",
+  nombre: "Harland Lohora",
+  puesto: "Instructor"
+  },
+  {
+    equipo: "UX y Diseño",
+    foto: "https://github.com/JeanmarieAluraLatam.png",
+    nombre: "Jeanmarie Quijada",
+    puesto: "Instructora en Alura Latam"
+  },
+  {
+    equipo: "Programación",
+    foto: "https://github.com/christianpva.png",
+    nombre: "Christian Velasco",
+    puesto: "Head de Alura e Instructor"
+  },
+  {
+    equipo: "Innovación y Gestión",
+    foto: "https://github.com/JoseDarioGonzalezCha.png",
+    nombre: "Jose Gonzalez",
+    puesto: "Dev FullStack"
   }])
 
   const cambiarMostrar = () => {
