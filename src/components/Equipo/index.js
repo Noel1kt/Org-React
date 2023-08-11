@@ -1,5 +1,6 @@
 import "./Equipo.css"
 import Colaborador from "../Colaborador"
+import hexToRgba from "hex-to-rgba"
 
 const Equipo = (props) => {
 
@@ -13,11 +14,11 @@ const Equipo = (props) => {
             colaboradores.length > 0 && 
             <section 
             className="equipo" 
-            style={{ backgroundColor: colorSecundario}}>
+            style={{ backgroundColor: colorPrimario}}>
                 <input
                     type="color"
                     className="input-color"
-                    value={colorSecundario}
+                    value={colorPrimario}
                     onChange={(event) => {
                         actualizarColor(event.target.value,titulo)
                     }}
