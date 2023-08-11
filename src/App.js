@@ -47,7 +47,7 @@ function App() {
       colorSecundario: "#FFF5D9",
     },
     {
-      titulo:"Innovación y  Gestión",
+      titulo:"Innovación y Gestión",
       colorPrimario: "#FF8A29",
       colorSecundario: "#FFEEDF",
     }
@@ -75,7 +75,7 @@ function App() {
         equipos.map( (equipo) => <Equipo 
         datos={equipo} 
         key={equipo.titulo}
-        colaboradores={colaboradores}
+        colaboradores={colaboradores.filter(colaborador => colaborador.equipo === equipo.titulo)}
         />)
       }
     </div>
