@@ -6,14 +6,24 @@ const Equipo = (props) => {
     //Destructuración es igual que hacer: 
     // const colorPrimario = props.datos.colorPrimario
     const { colorPrimario, colorSecundario, titulo } = props.datos
-    const {colaboradores, eliminarColaborador} = props
-    console.log(colaboradores.length>0)
+    const {colaboradores, eliminarColaborador, actualizarColor} = props
+
     return<> 
         {
             colaboradores.length > 0 && 
             <section 
             className="equipo" 
             style={{ backgroundColor: colorSecundario}}>
+                <input
+                    type="color"
+                    className="input-color"
+                    value={colorSecundario}
+                    onChange={(event) => {
+                        actualizarColor(event.target.value,titulo)
+                    }}
+                
+                />
+
                 <h3 style={{borderColor: colorPrimario}}>
                     {titulo} 
                 </h3>

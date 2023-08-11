@@ -90,7 +90,10 @@ function App() {
     //Spread operator
     actualizarColaboradores([...colaboradores, colaborador])
   }
-
+//Actualizar Color de equipo
+  const actualizarColor = (color, titulo) => {
+    console.log("Actualizar: ",color,titulo)
+  }
 
 //Eliminar Colaborador
 
@@ -116,6 +119,7 @@ function App() {
         key={equipo.titulo}
         colaboradores={colaboradores.filter(colaborador => colaborador.equipo === equipo.titulo)}
         eliminarColaborador={eliminarColaborador}
+        actualizarColor={actualizarColor}
         />)
       }
     <Footer />
