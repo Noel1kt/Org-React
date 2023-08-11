@@ -11,6 +11,7 @@
     position: absolute;
     top: 20px;
     right: 50px;
+    border-style: none;
 }
 
 .equipo h3{
