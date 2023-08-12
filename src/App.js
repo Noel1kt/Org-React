@@ -102,10 +102,10 @@ function App() {
     actualizarColaboradores([...colaboradores, colaborador])
   }
 //Actualizar Color de equipo
-  const actualizarColor = (color, titulo) => {
-    console.log("Actualizar: ",color,titulo)
+  const actualizarColor = (color, id) => {
+    console.log("Actualizar: ",color,id)
     const equiposActualizados = equipos.map((equipo) => {
-      if(equipo.titulo === titulo){
+      if(equipo.id === id){
         equipo.colorPrimario = color
       }
 
@@ -117,8 +117,10 @@ function App() {
 
 //Eliminar Colaborador
 
-  const eliminarColaborador = () => {
-    console.log("Eliminar Colaborador")
+  const eliminarColaborador = (id) => {
+    console.log("Eliminar Colaborador",id)
+    const nuevosColaboradores = colaboradores.filter((colaborador) => colaborador.id !== id)
+    actualizarColaboradores(nuevosColaboradores)
   }
 
 

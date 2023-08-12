@@ -6,7 +6,7 @@ const Equipo = (props) => {
 
     //Destructuración es igual que hacer: 
     // const colorPrimario = props.datos.colorPrimario
-    const { colorPrimario, colorSecundario, titulo } = props.datos
+    const { colorPrimario, colorSecundario, titulo, id } = props.datos
     const {colaboradores, eliminarColaborador, actualizarColor} = props
 
     return<> 
@@ -21,7 +21,7 @@ const Equipo = (props) => {
                     value={colorPrimario}
                     
                     onChange={(event) => {
-                        actualizarColor(event.target.value,titulo)
+                        actualizarColor(event.target.value,id)
                     }}
                 
                 />
