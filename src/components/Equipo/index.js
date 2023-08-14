@@ -7,7 +7,7 @@ const Equipo = (props) => {
     //Destructuración es igual que hacer: 
     // const colorPrimario = props.datos.colorPrimario
     const { colorPrimario, colorSecundario, titulo, id } = props.datos
-    const {colaboradores, eliminarColaborador, actualizarColor} = props
+    const {colaboradores, eliminarColaborador, actualizarColor, like} = props
 
     return<> 
         {
@@ -36,6 +36,7 @@ const Equipo = (props) => {
                         key={index} 
                         colorPrimario={colorPrimario}
                         eliminarColaborador={eliminarColaborador}
+                        like={like}
                         />)
                     }
                 </div>
