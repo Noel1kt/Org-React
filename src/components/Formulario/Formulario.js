@@ -30,7 +30,7 @@ const Formulario = (props) => {
 
     const manejarNuevoEquipo = (e) => {
         e.preventDefault()
-        crearEquipo({titulo,color})
+        crearEquipo({titulo,colorPrimario: color})
     }
 
 

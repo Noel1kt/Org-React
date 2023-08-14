@@ -126,6 +126,7 @@ function App() {
 
   const crearEquipo = (nuevoEquipo) => {
     console.log(nuevoEquipo)
+    actualizarEquipos([...equipos,{...nuevoEquipo, id: uuid()}])
   }
 
 
