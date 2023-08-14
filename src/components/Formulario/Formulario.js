@@ -11,6 +11,9 @@ const Formulario = (props) => {
     const [foto,actualizarFoto] = useState("")
     const [equipo,actualizarEquipo] = useState("")
 
+    const [titulo,actualizarTitulo] = useState("")
+    const [color, actualizarColor] = useState("")
+
     const {registrarColaborador} = props
 
     const manejarEnvio = (e) => {
@@ -55,6 +58,25 @@ const Formulario = (props) => {
                 Crear colaborador
             </Boton>
         </form>
+        <form onSubmit={manejarEnvio}>
+            <h2>Rellena el formulario para crear el Equipo.</h2>
+            <CampoTexto 
+            titulo="Título" 
+            placeholder="Ingresar Título"
+            required 
+            valor={titulo} 
+            actualizarValor={actualizarTitulo}/>
+            <CampoTexto 
+            titulo="Color"
+            placeholder="Ingresar Color en hexadecimal" 
+            required
+            valor={color} 
+            actualizarValor={actualizarColor}/>
+        <Boton>
+                Registrar Equipo
+        </Boton>    
+        </form>
+        
     </section>
 }
 
