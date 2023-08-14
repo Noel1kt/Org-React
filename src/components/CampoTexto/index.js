@@ -6,6 +6,8 @@ const CampoTexto = (props) => {
         props.actualizarValor(e.target.value)
     }
 
+    const {type="text"} = props
+
     return <div className="campo-texto">
         <label>{props.titulo}</label>
         <input 
@@ -13,6 +15,7 @@ const CampoTexto = (props) => {
         required={props.required} 
         value={props.valor}
         onChange={manejarCambio}
+        type={type}
         />
     </div>
 }
