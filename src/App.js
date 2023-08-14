@@ -9,7 +9,7 @@ import Footer from './components/footer';
 
 
 function App() {
-  const [mostrarFormulario, actualizarMostrar] = useState(false)
+  const [mostrarFormulario, actualizarMostrar] = useState(true)
   const [colaboradores, actualizarColaboradores] = useState([{
     id: uuid(),
     equipo:"Front End",
