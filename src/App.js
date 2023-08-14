@@ -124,6 +124,11 @@ function App() {
   }
 
 
+  const crearEquipo = (nuevoEquipo) => {
+    console.log(nuevoEquipo)
+  }
+
+
 
   return (
     <div>
@@ -131,6 +136,7 @@ function App() {
       { mostrarFormulario === true ? <Formulario 
       equipos={equipos.map((equipo) => equipo.titulo)}
       registrarColaborador={registrarColaborador}
+      crearEquipo={crearEquipo}
       /> : <div></div>}
     
 
